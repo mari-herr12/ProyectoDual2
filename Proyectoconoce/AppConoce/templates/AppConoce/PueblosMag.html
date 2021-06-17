@@ -1,0 +1,248 @@
+{%extends 'AppConoce/index.html' %}
+{%load static%}
+
+{%block content%}
+<script src="{% static 'AppConoce/js/morphext.min.js' %}"></script>
+
+<div id="projects" class="filter">
+		<div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">PUEBLOS MÁGICOS</div>
+                    <h2>Pueblos Mágicos que tienes que visitar ✈️</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Filter -->
+                   
+                    <div class="grid">
+                        <div class="element-item development">
+                            <a class="popup-with-move-anim" href="{% url 'Plan' %}"><div class="element-item-overlay"><span>Sayulita es una pequeña localidad turística localizada en el municipio de Bahía de Banderas en el sur del estado mexicano de Nayarit.</span></div><img src="{% static 'AppConoce/images/Sayulita.jpg' %}" alt="alternative"></a>
+                        </div>
+                        <div class="element-item development">
+                            <a class="popup-with-move-anim" href="#project-2"><div class="element-item-overlay"><span>Tepoztlán es un pueblo mexicano al sur de la Ciudad de México, Tepoztlán fue nombrado "Pueblo Mágico" en 2002</span></div><img src="{% static 'AppConoce/images/Tepoztlan.jpg' %}" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design development marketing">
+                            <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span>Taxco es una ciudad del estado de Guerrero, al suroeste de Ciudad de México. Es famosa por la producción de joyas de plata.</span></div><img src="{% static 'AppConoce/images/Taxco.jpg' %}" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design development marketing">
+                            <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span>Tequila es una ciudad del estado de Jalisco, en el centro de México. Es conocida por la producción de tequila.</span></div><img src="{% static 'AppConoce/images/Tequila.jpg' %}" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design development marketing seo">
+                            <a class="popup-with-move-anim" href="#project-5"><div class="element-item-overlay"><span>Bacalar es una población del estado mexicano de Quintana Roo, situada en el sur de su territorio a unos 40 km al norte de la capital, Chetumal.</span></div><img src="{% static 'AppConoce/images/Bacalar.jpg' %}" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design marketing seo">
+                            <a class="popup-with-move-anim" href="#project-6"><div class="element-item-overlay"><span>Teotihuacán es un amplio complejo arqueológico mexicano al noreste de la Ciudad de México, Esta une el Templo de Quetzalcóatl, la Pirámide de la Luna y la Pirámide del Sol.</span></div><img src="{% static 'AppConoce/images/Teotihuacán.jpg' %}" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design marketing">
+                            <a class="popup-with-move-anim" href="#project-7"><div class="element-item-overlay"><span>Tulum es una ciudad de la costa caribeña de México, en la Península de Yucatán.</span></div><img src="{% static 'AppConoce/images/Tulum.jpg' %}" alt="alternative"></a>
+                        </div>
+                        <div class="element-item design marketing">
+                            <a class="popup-with-move-anim" href="#project-8"><div class="element-item-overlay"><span>Palenque es un yacimiento arqueológico que, junto a Chichén Itzá y Tikal, es uno de los tres pueblos más importantes de la cultura maya.</span></div><img src="{% static 'AppConoce/images/Palenque.jpg' %}" alt="alternative"></a>
+                        </div>
+                        <div class="element-item development">
+                            <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span>Bernal es un pueblo del estado mexicano de Querétaro, localizado en el municipio de Ezequiel Montes,conocido por estar al pie de la Peña de Bernal.</span></div><img src="{% static 'AppConoce/images/Bernal.jpg' %}" alt="alternative"></a>
+                        </div>
+                        <div class="element-item development">
+                            <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span>Orizaba ​​ es una ciudad mexicana ubicado en el centro geográfico del Estado de Veracruz, en la región de las altas montañas.​ </span></div><img src="{% static 'AppConoce/images/Orizaba.jpg' %}" alt="alternative"></a>
+                        </div>
+                        <div class="element-item development">
+                            <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span>Xilitla es una ciudad del estado de San Luís Potosí, en el centro de México. Es conocida por el jardín Las Pozas.</span></div><img src="{% static 'AppConoce/images/Xilita.jpg' %}" alt="alternative"></a>
+                        </div>
+                        <div class="element-item development">
+                            <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span>Real del Monte es uno de los emblemas turísticos de Hidalgo y forma parte de la ruta Corredor de la Montaña.</span></div><img src="{% static 'AppConoce/images/Real.jpg' %}" alt="alternative"></a>
+                        </div>
+                    </div> <!-- end of grid -->
+                    <!-- end of filter -->
+                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+		</div> <!-- end of container -->
+    </div>
+     
+
+     <div id="project-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="{% static 'AppConoce/images/Sayulita.jpg' %}" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Online Banking</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="{% static 'AppConoce/images/projec1.jpg' %}" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Classic Industry</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-3.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>BoomBap Audio</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-4" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-4.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Van Moose</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-5" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-5.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Joy Moments</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-6" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-6.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Spark Events</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-7" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-7.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Casual Wear</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- Lightbox -->
+    <div id="project-8" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <img class="img-fluid" src="images/project-8.jpg" alt="alternative">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Zazoo Apps</h3>
+                <hr class="line-heading">
+                <h6>Strategy Development</h6>
+                <p>Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current needs</p>
+                <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+                <div class="testimonial-container">
+                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
+                    <p class="testimonial-author">General Manager</p>
+                </div>
+                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">BACK</a> 
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+
+
+{%endblock%}

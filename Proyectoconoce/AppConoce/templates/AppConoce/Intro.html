@@ -1,0 +1,27 @@
+{%extends 'AppConoce/index.html' %}
+{%load static%}
+
+{%block content%}
+
+<div id="intro" class="basic-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="text-container">
+                    <div class="section-title">INTRO</div>
+                    <h2>Atrévete a visitar cada rincon de nuestro hermoso país</h2>
+                    <p>Conoce México te ayudara a conocer un poco mas de los lugares mas hermosos de México, asi como brindarte informacion sobre dichos lugares, su ubicación, caracteristicas entre otras cosas.</p>
+                    <p class="testimonial-text">"Conoce a México desde sus entrañas más bellas. Aquí podrás encontrar los mejores Paisajes, Cultura, Arquitectura, Tradiciones. "</p>
+                    <div class="testimonial-author">Mariana Herrera</div>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-7">
+                <div class="col-lg-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'AppConoce/images/intro3.jpg' %}" alt="alternative">
+                    </div>  <!-- end of image-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-1 -->
+{%endblock%}
